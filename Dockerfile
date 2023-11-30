@@ -8,4 +8,4 @@ WORKDIR /app
 COPY --from=build-stage /app/default_img default_img/
 COPY --from=build-stage /app/main ./main
 EXPOSE 80
-CMD ["./main", "80", "https://togathers3.s3.ap-northeast-1.amazonaws.com"]
+CMD ["./main", "80", "https://ordering-uat-1318552943.cos.ap-hongkong.myqcloud.com"]
